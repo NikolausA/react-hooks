@@ -1,5 +1,10 @@
 import "./App.css";
-import { HoveredComponent, LocalStorage, Posts } from "./components";
+import {
+  HoveredComponent,
+  LocalStorage,
+  Posts,
+  ViewportSizeComponent,
+} from "./components";
 
 function App() {
   return (
@@ -8,6 +13,7 @@ function App() {
       <Posts />
       <LocalStorage />
       <HoveredComponent />
+      <ViewportSizeComponent />
     </>
   );
 }
