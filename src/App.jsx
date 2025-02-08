@@ -3,6 +3,7 @@ import {
   HoveredComponent,
   LocalStorage,
   Posts,
+  ScrollComponent,
   ViewportSizeComponent,
 } from "./components";
 
@@ -14,6 +15,7 @@ function App() {
       <LocalStorage />
       <HoveredComponent />
       <ViewportSizeComponent />
+      <ScrollComponent />
     </>
   );
 }
