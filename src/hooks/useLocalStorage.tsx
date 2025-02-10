@@ -14,19 +14,19 @@ type UseLocalStorage = (key: string) => [
 const getStoragedValue = (key: string): LocalStorageReturnValue => {
   const storagedValue = localStorage.getItem(key);
 
-  return storagedValue ? JSON.parse(storagedValue) : null;
+  return storagedValue ? storagedValue : null;
 };
 export const useLocalStorage: UseLocalStorage = (key) => {
   const [value, setValue] = useState(() => getStoragedValue(key));
 
   const setItem = (value: LocalStorageSetValue) => {
-    localStorage.setItem(key, JSON.stringify(value));
-    setValue(getStoragedValue(key));
+    localStorage.setItem(key, value);
+    setValue(value);
   };
 
   const removeItem = () => {
     localStorage.removeItem(key);
-    setValue("");
+    setValue(null);
   };
 
   return [value, { setItem, removeItem }];
