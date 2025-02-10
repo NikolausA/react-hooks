@@ -4,6 +4,7 @@ import {
   LocalStorage,
   Posts,
   ScrollComponent,
+  ToggleComponent,
   ViewportSizeComponent,
 } from "./components";
 
@@ -16,6 +17,7 @@ function App() {
       <HoveredComponent />
       <ViewportSizeComponent />
       <ScrollComponent />
+      <ToggleComponent />
     </>
   );
 }
