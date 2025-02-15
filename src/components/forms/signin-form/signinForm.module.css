@@ -1,0 +1,13 @@
+.form {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  margin: 20px 0;
+  background-color: #0d6efd;
+  color: #fff;
+}
