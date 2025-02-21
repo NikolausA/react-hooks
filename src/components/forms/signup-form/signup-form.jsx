@@ -42,6 +42,7 @@ export const SignupForm = ({ onSubmit }) => {
         name="name"
         placeholder="Enter your name"
         label="Your name"
+        asterisk="true"
       />
       <Input
         type="text"
@@ -64,6 +65,7 @@ export const SignupForm = ({ onSubmit }) => {
         type="email"
         name="email"
         placeholder="Enter your email"
+        asterisk="true"
         label="Your email"
         icon={<MdOutlineAlternateEmail />}
       />
@@ -71,12 +73,14 @@ export const SignupForm = ({ onSubmit }) => {
         type="password"
         name="password"
         placeholder="Enter your password"
+        asterisk="true"
         label="Your password"
       />
       <Input
         type="password"
         name="confirmation"
         placeholder="Retype your password"
+        asterisk="true"
         label="Password confirmation"
       />
       <button className={styles.button} type="submit">
