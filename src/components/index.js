@@ -4,3 +4,6 @@ export * from "./hovered-component";
 export * from "./viewport-size-component";
 export * from "./scroll-component";
 export * from "./toggle-component";
+export * from "./forms/input/input";
+export * from "./forms/signin-form/signin-form";
+export * from "./forms/signup-form/signup-form";
